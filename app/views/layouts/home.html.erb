@@ -1,7 +1,11 @@
 <html>
 <head>
-	<title>Ruby on Rails Tutorial Sample App | <%= @title %> </title>
+	<title> <%= @title %> </title>
 	 <%= csrf_meta_tag %>
+	 <%= stylesheet_link_tag 'public/stylesheets/screen.css', :media => 'screen' %>
+	 <%= stylesheet_link_tag 'public/stylesheets/print.css',  :media => 'print' %>
+	<%= stylesheet_link_tag 'public/stylesheets/ie.css',  :media => 'print' %>
+	</head>
 	<body>
  <%= yield %>
 </body>
